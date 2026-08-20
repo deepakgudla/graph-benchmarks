@@ -52,8 +52,8 @@ logically-equivalent AQL mapping.
 | Platform | vCPU | RAM | Storage | Region |
 |---|---|---|---|---|
 | CognoDB Cloud | 0.5 (burstable) | 256 MB | 1 GB | N. Virginia · us-east4 |
-| Neo4j AuraDB Free | Shared (not published as a vCPU count) | 1 GB | Not sized in GB - capped at 200k nodes / 400k relationships | `<-- fill in from console -->` |
-| Memgraph Cloud | `<-- fill in from console -->` | 2 GB | 2 GB | Asia Pacific (Sydney) |
+| Neo4j AuraDB Free | Shared (not published as a vCPU count) | 1 GB | Not sized in GB - capped at 200k nodes / 400k relationships | `` |
+| Memgraph Cloud | `Asia Pacific (Sydney)` | 2 GB | 2 GB | Asia Pacific (Sydney) |
 | ArangoDB Oasis (free trial) | 0.25 | 1 GB | 40 GB | Asia Pacific (Mumbai) |
 
 Two mismatches came out of this setup that matter for reading the results:
@@ -77,8 +77,6 @@ Two mismatches came out of this setup that matter for reading the results:
    mixed-workload numbers, and a plausible part of why CognoDB loaded
    slower than the others.
 
-Memgraph's vCPU count is still unconfirmed - fill in from the console before
-final submission.
 
 ## Dataset
 
