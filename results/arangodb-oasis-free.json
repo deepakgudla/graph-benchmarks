@@ -1,0 +1,105 @@
+{
+  "platform": "arangodb-oasis-free",
+  "run_at": "2026-08-20T01:25:47.005418003+05:30",
+  "advertised_specs": {
+    "ram": "fill in",
+    "region": "Asian Pacific Mumbai",
+    "storage": "fill in",
+    "vcpu": "fill in"
+  },
+  "caveats": null,
+  "node_load": {
+    "items_loaded": 91489,
+    "wall_seconds": 20.669023635,
+    "items_per_second": 4426.382281796641
+  },
+  "rel_load": {
+    "items_loaded": 200000,
+    "wall_seconds": 22.426552972,
+    "items_per_second": 8918.000026562442
+  },
+  "traversal_1_hop": {
+    "iterations": 192,
+    "p50_ms": 26.032779,
+    "p95_ms": 33.286057,
+    "mean_ms": 28.606417369791668,
+    "min_ms": 23.740228,
+    "max_ms": 108.65348,
+    "errors": 8
+  },
+  "traversal_2_hop": {
+    "iterations": 192,
+    "p50_ms": 26.081185,
+    "p95_ms": 52.605185,
+    "mean_ms": 29.169770494791667,
+    "min_ms": 22.696684,
+    "max_ms": 110.932104,
+    "errors": 8
+  },
+  "traversal_3_hop": {
+    "iterations": 192,
+    "p50_ms": 26.014137,
+    "p95_ms": 32.684839,
+    "mean_ms": 27.41564380208333,
+    "min_ms": 23.672802,
+    "max_ms": 112.939601,
+    "errors": 8
+  },
+  "point_lookup": {
+    "iterations": 200,
+    "p50_ms": 26.09442,
+    "p95_ms": 48.712019,
+    "mean_ms": 29.176643885,
+    "min_ms": 23.278709,
+    "max_ms": 112.291009,
+    "errors": 0
+  },
+  "indexed_lookup": {
+    "iterations": 200,
+    "p50_ms": 25.975243,
+    "p95_ms": 32.926536,
+    "mean_ms": 28.204426895,
+    "min_ms": 23.973071,
+    "max_ms": 107.838932,
+    "errors": 0
+  },
+  "aggregation": {
+    "iterations": 0,
+    "p50_ms": 0,
+    "p95_ms": 0,
+    "mean_ms": 0,
+    "min_ms": 0,
+    "max_ms": 0,
+    "errors": 200
+  },
+  "indexed_on": "region",
+  "mixed_workload": [
+    {
+      "concurrency": 1,
+      "write_ratio": 0.2,
+      "duration_seconds": 20.00521648,
+      "total_ops": 690,
+      "errors": 116,
+      "queries_per_second": 34.491003918393986
+    },
+    {
+      "concurrency": 10,
+      "write_ratio": 0.2,
+      "duration_seconds": 20.000327697,
+      "total_ops": 5958,
+      "errors": 1021,
+      "queries_per_second": 297.8951190331589
+    },
+    {
+      "concurrency": 40,
+      "write_ratio": 0.2,
+      "duration_seconds": 20.001892567,
+      "total_ops": 12711,
+      "errors": 2167,
+      "queries_per_second": 635.4898646426672
+    }
+  ],
+  "footprint": {
+    "stored_data_size": "{\"cacheInUse\":false,\"cacheSize\":0,\"cacheUsage\":0,\"documentsSize\":6921846,\"indexes\":{\"count\":2,\"size\":4493899}}"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "platform": "memgraph-cloud",
+  "run_at": "2026-08-19T23:10:55.854281121+05:30",
+  "advertised_specs": {
+    "ram": "2 GB",
+    "region": "Asia Pacific (Sydney)",
+    "storage": "2 GB",
+    "vcpu": "fill in from console (match CognoDB's 0.5 vCPU tier if offered)"
+  },
+  "caveats": null,
+  "node_load": {
+    "items_loaded": 91489,
+    "wall_seconds": 1706.941581526,
+    "items_per_second": 53.5982021822968
+  },
+  "rel_load": {
+    "items_loaded": 200000,
+    "wall_seconds": 6757.776748548,
+    "items_per_second": 29.595532294400332
+  },
+  "traversal_1_hop": {
+    "iterations": 200,
+    "p50_ms": 184.27976,
+    "p95_ms": 198.016033,
+    "mean_ms": 188.336438295,
+    "min_ms": 177.72164,
+    "max_ms": 714.712338,
+    "errors": 0
+  },
+  "traversal_2_hop": {
+    "iterations": 200,
+    "p50_ms": 184.168617,
+    "p95_ms": 206.768583,
+    "mean_ms": 188.19269278,
+    "min_ms": 177.70807,
+    "max_ms": 311.540608,
+    "errors": 0
+  },
+  "traversal_3_hop": {
+    "iterations": 200,
+    "p50_ms": 185.203403,
+    "p95_ms": 195.286038,
+    "mean_ms": 188.31061905500002,
+    "min_ms": 176.269928,
+    "max_ms": 614.80301,
+    "errors": 0
+  },
+  "point_lookup": {
+    "iterations": 200,
+    "p50_ms": 182.874368,
+    "p95_ms": 195.326133,
+    "mean_ms": 189.24699594499998,
+    "min_ms": 176.382324,
+    "max_ms": 968.94818,
+    "errors": 0
+  },
+  "indexed_lookup": {
+    "iterations": 200,
+    "p50_ms": 155.732882,
+    "p95_ms": 166.242766,
+    "mean_ms": 157.32585269499998,
+    "min_ms": 149.106054,
+    "max_ms": 245.773765,
+    "errors": 0
+  },
+  "aggregation": {
+    "iterations": 200,
+    "p50_ms": 188.995394,
+    "p95_ms": 205.062651,
+    "mean_ms": 191.474654325,
+    "min_ms": 182.513218,
+    "max_ms": 260.798566,
+    "errors": 0
+  },
+  "indexed_on": "region",
+  "mixed_workload": [
+    {
+      "concurrency": 1,
+      "write_ratio": 0.2,
+      "duration_seconds": 20.007827176,
+      "total_ops": 105,
+      "errors": 1,
+      "queries_per_second": 5.247946170084411
+    },
+    {
+      "concurrency": 10,
+      "write_ratio": 0.2,
+      "duration_seconds": 20.002160939,
+      "total_ops": 705,
+      "errors": 10,
+      "queries_per_second": 35.2461917564816
+    },
+    {
+      "concurrency": 40,
+      "write_ratio": 0.2,
+      "duration_seconds": 20.000510006,
+      "total_ops": 742,
+      "errors": 40,
+      "queries_per_second": 37.099053962994226
+    }
+  ],
+  "footprint": {
+    "memory_usage": "not observable via Cypher - check platform console",
+    "node_count": "91489",
+    "node_count_query_latency_ms": "1312.48",
+    "stored_data_size": "not observable via Cypher - check platform console"
+  }
+}
