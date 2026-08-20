@@ -417,6 +417,7 @@ internal/workload/      Load + warm-up + measured workloads + concurrency sweep
 internal/metrics/       Percentile computation, JSON + Markdown report writers
 configs/platforms.json  Per-platform driver, credentials-by-env-var, specs
 scripts/                Dataset download + one-shot full-pipeline runner
+assets/                  chart images 
 ```
 
 Adding a sixth platform means implementing `dbclient.Client` in one new file
