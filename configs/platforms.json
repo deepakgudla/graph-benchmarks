@@ -1,0 +1,65 @@
+{
+  "results_dir": "results",
+  "dataset": {
+    "nodes_csv": "data/nodes.csv",
+    "edges_csv": "data/edges.csv"
+  },
+  "workload": {
+    "batch_size": 1000,
+    "warmup_iterations": 20,
+    "read_iterations": 200,
+    "mixed_duration_seconds": 20,
+    "mixed_concurrencies": [1, 10, 40],
+    "mixed_write_ratio": 0.2
+  },
+  "platforms": [
+    {
+      "name": "cognodb",
+      "driver": "cypher-bolt",
+      "uri_env": "COGNODB_URI",
+      "user_env": "COGNODB_USER",
+      "password_env": "COGNODB_PASSWORD",
+      "database": "",
+      "advertised_vcpu": "0.5 (burstable)",
+      "advertised_ram": "256 MB",
+      "advertised_storage": "1 GB",
+      "region": "N. Virginia · us-east4"
+    },
+    {
+      "name": "neo4j-aura-free",
+      "driver": "cypher-bolt",
+      "uri_env": "AURA_URI",
+      "user_env": "AURA_USER",
+      "password_env": "AURA_PASSWORD",
+      "database": "",
+      "advertised_vcpu": "shared (Aura Free, not published as vCPU)",
+      "advertised_ram": "1 GB",
+      "advertised_storage": "~0.4 GB (200k nodes/400k rels cap)",
+      "region": ""
+    },
+    {
+      "name": "memgraph-cloud",
+      "driver": "cypher-bolt",
+      "uri_env": "MEMGRAPH_URI",
+      "user_env": "MEMGRAPH_USER",
+      "password_env": "MEMGRAPH_PASSWORD",
+      "database": "",
+      "advertised_vcpu": "fill in from console (match CognoDB's 0.5 vCPU tier if offered)",
+      "advertised_ram": "2 GB",
+      "advertised_storage": "2 GB",
+      "region": "Asia Pacific Sydney"
+    },
+    {
+      "name": "arangodb-oasis-free",
+      "driver": "arangodb-aql",
+      "uri_env": "ARANGO_URI",
+      "user_env": "ARANGO_USER",
+      "password_env": "ARANGO_PASSWORD",
+      "database": "_system",
+      "advertised_vcpu": "0.25",
+      "advertised_ram": "1 GB",
+      "advertised_storage": "40 GB",
+      "region": "Asia Pacific Mumbai"
+    }
+  ]
+}
